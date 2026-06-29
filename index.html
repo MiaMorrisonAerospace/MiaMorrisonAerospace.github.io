@@ -31,17 +31,35 @@ body {
     margin: auto;
 }
 
-.project {
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    margin-top: 20px;
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
 }
 
-.project img {
-    max-width: 500px;
+.project {
+    width: 430px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    background: white;
+}
+
+.project img,
+.project video {
     width: 100%;
-    display: block;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.project h3 {
+    text-align: center;
+}
+
+.project a {
+    font-weight: bold;
 }
 
 .links a {
@@ -126,6 +144,8 @@ My goal is to help design and develop aerospace systems that push the boundaries
 
 <h2>Engineering Projects</h2>
 
+<div class="projects-grid">
+    
 <div class="project">
 
 <h3>Pathfinder ADR-01 Autonomous Rover</h3>
@@ -197,7 +217,7 @@ View Project
 </div>
 
 </div>
-
+</div>
 <hr>
 
 <div class="section">
