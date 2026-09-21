@@ -25,9 +25,9 @@ body {
     border-radius: 50%;
 }
 
-.hero h1{
-    font-size:44px;
-    margin:10px 0;
+.hero h1 {
+    font-size: 44px;
+    margin: 10px 0;
 }
 
 .hero h2 {
@@ -50,6 +50,7 @@ body {
     text-decoration: none;
     font-size: 18px;
 }
+
 .about {
     text-align: center;
     max-width: 800px;
@@ -64,11 +65,11 @@ body {
 }
 
 .project {
-    width:400px;
-    border:1px solid #ddd;
-    border-radius:12px;
-    padding:20px;
-    background:white;
+    width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    background: white;
 }
 
 .project img,
@@ -96,290 +97,405 @@ body {
 }
 
 </style>
-    
+
 </head>
 
 <body>
 
+<!-- HERO SECTION -->
+
 <div class="hero">
 
-<img src="images/Headshot_Pink.jpg">
+    <img src="images/Headshot_Pink.jpg" alt="Mia Morrison">
 
-<h1>Mia Morrison</h1>
+    <h1>Mia Morrison</h1>
 
-<h2>Aerospace Engineering Student</h2>
+    <h2>Aerospace Engineering Student</h2>
 
-<h2>Embry-Riddle Aeronautical University | Class of 2027</h2>
+    <h2>Embry-Riddle Aeronautical University | Class of 2027</h2>
 
-<p class="tagline">
-Systems Thinker • Technical Leader • Problem Solver
-</p>
+    <p class="tagline">
+        Guidance, Navigation &amp; Control • Space Systems • Engineering Simulation
+    </p>
 
-<div class="links">
+    <div class="links">
 
-<a href="images/MMorrison_EGResume_.pdf" target="_blank">Resume</a>
+        <a href="images/MMorrison_EGResume_.pdf" target="_blank">
+            Resume
+        </a>
 
-<a href="https://github.com/MiaMorrisonAerospace" target="_blank">GitHub</a>
+        <a href="https://github.com/MiaMorrisonAerospace" target="_blank">
+            GitHub
+        </a>
 
-<a href="https://www.linkedin.com/in/miamorrison88/" target="_blank">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/miamorrison88/" target="_blank">
+            LinkedIn
+        </a>
 
-</div>
+    </div>
 
 </div>
 
 <hr style="margin-top:20px; margin-bottom:35px;">
 
-</div>
 
-</div>
+<!-- FEATURED ENGINEERING PROJECTS -->
 
-
-    
 <div class="section">
 
 <h2 style="text-align:center;">Featured Engineering Projects</h2>
 
 <div class="projects-grid">
-    
-<div class="project">
 
-<h3>Pathfinder AODR-01 Autonomous Rover</h3>
 
-<img src="images/Rover_elect.jpeg">
-
-<p>
-Designed and built an autonomous obstacle-avoidance rover using Arduino, ultrasonic sensing, electronics integration, and a custom 3D-printed chassis. This self-directed project involved independently learning Arduino programming, embedded systems development, and technical documentation.
-
-    <p>
-<strong>This project has been selected for a sponsorship with PCBWay and currently undergoing professional manufacturing.</strong>
-</p>
-    
-</p>
-
-<a href="https://github.com/MiaMorrisonAerospace/Pathfinder-AODR01-Rover" target="_blank">
-View Project
-</a>
-
-</div>
+<!-- SIMULINK ROCKET PROJECT -->
 
 <div class="project">
 
     <h3>SIMULINK 3D Rocket Launch Simulation (3-2-1 Euler Rotation)</h3>
 
-    <div style="display:flex; gap:20px; justify-content:center; align-items:flex-start; flex-wrap:wrap;">
+    <a href="images/Rocket_Launch_Sim.pdf" target="_blank">
+        <img src="images/Rocket_Launch_Sim.png"
+             alt="Simulink Rocket Launch Diagram">
+    </a>
 
-        <a href="images/Rocket_Launch_Sim.pdf" target="_blank">
-    <img src="images/Rocket_Launch_Sim.png"
-         alt="Simulink Rocket Launch Diagram"
-         width="700">
-</a>
-
-        <video width="420" controls>
-            <source src="images/Rocket_Animation_vid.mp4" type="video/mp4">
-        </video>
-
-    </div>
+    <video controls>
+        <source src="images/Rocket_Animation_vid.mp4" type="video/mp4">
+    </video>
 
     <p>
-        Developed a three-dimensional rocket launch simulation in MATLAB and Simulink to model variable-mass flight dynamics using a 3-2-1 Euler rotation sequence. The simulation computes body-to-inertial force transformations, translational motion, and attitude dynamics while visualizing the rocket's trajectory through a custom MATLAB animation with real-time flight telemetry.
+        Developed a three-dimensional rocket launch simulation in MATLAB and
+        Simulink to model variable-mass flight dynamics using a 3-2-1 Euler
+        rotation sequence. The simulation computes body-to-inertial force
+        transformations, translational motion, and attitude dynamics while
+        visualizing the rocket's trajectory through a custom MATLAB animation
+        with real-time flight telemetry.
     </p>
 
-    <a href="https://github.com/MiaMorrisonAerospace/SIMULINK_3D_Rocket_Launch_Simulation" target="_blank">
+    <a href="https://github.com/MiaMorrisonAerospace/SIMULINK_3D_Rocket_Launch_Simulation"
+       target="_blank">
         View Project
     </a>
 
 </div>
 
-    
-<div class="project">
 
-<h3>PYTHON Satellite Trajectory Analysis</h3>
-
-<video width="600" controls>
-    <source src="images/Satellite Trajectory Analysis Tool.mp4" type="video/mp4">
-</video>
-
-<p>
-Built an interactive Python application that visualizes satellite orbits by allowing users to modify Keplerian orbital elements in real time. The application also analyzes satellite altitude using SGP4 propagation with real TLE data and supports exporting orbital parameters for further analysis.
-<a href="https://github.com/MiaMorrisonAerospace/PYTHON-Satellite-Trajectory-Analysis-Tool" target="_blank">
-<p>
-View Project
-</a>
-
-</div>
-
-    
-<div class="project">
-
-<h3>MATLAB Active Recall Study System</h3>
-
-<video width="600" controls>
-    <source src="images/MATLAB Active Recall Short.mp4" type="video/mp4">
-</video>
-
-<p>
-This MATLAB program helps engineering students prepare for exams using active recall by presenting questions, evaluating responses, providing explanations, and guiding students through course-specific review sessions.
-</p>
-
-
-<a href="https://github.com/MiaMorrisonAerospace/MATLAB-Active-Recall-Study-System" target="_blank">
-View Project
-</a>
-
-</div>
+<!-- SATELLITE TRAJECTORY PROJECT -->
 
 <div class="project">
 
-<h3>MATLAB Meal Recommendation System</h3>
+    <h3>PYTHON Satellite Trajectory Analysis</h3>
 
-<video width="600" controls>
-    <source src="images/Meal Prep Video.mp4" type="video/mp4">
-</video>
+    <video controls>
+        <source src="images/Satellite Trajectory Analysis Tool.mp4"
+                type="video/mp4">
+    </video>
 
-<p>
-Developed a MATLAB application that generates high-protein, low-calorie meal recommendations based on meal type, protein preference, and available cooking time using an Excel-based recipe database.
-</p>
+    <p>
+        Built an interactive Python application that visualizes satellite
+        orbits by allowing users to modify Keplerian orbital elements in real
+        time. The application also analyzes satellite altitude using SGP4
+        propagation with real TLE data and supports exporting orbital
+        parameters for further analysis.
+    </p>
 
-
-<a href="https://github.com/MiaMorrisonAerospace/MATLAB-Study-Abroad-Meal-Recommendation-System" target="_blank">
-View Project
-</a>
+    <a href="https://github.com/MiaMorrisonAerospace/PYTHON-Satellite-Trajectory-Analysis-Tool"
+       target="_blank">
+        View Project
+    </a>
 
 </div>
+
+
+<!-- AUTONOMOUS ROVER PROJECT -->
 
 <div class="project">
 
-<h3>CATIA Scooter Design Project</h3>
+    <h3>Pathfinder AODR-01 Autonomous Rover</h3>
 
-<img src="images/Scooter Rendering.png">
+    <img src="images/Rover_elect.jpeg"
+         alt="Pathfinder Autonomous Rover">
 
-<p>
-Reverse-engineered and modeled an electric scooter assembly using CATIA while creating engineering drawings and technical documentation. This project helped build the CAD skills that contributed to obtaining my first engineering internship.
-</p>
+    <p>
+        Designed and built an autonomous obstacle-avoidance rover using
+        Arduino, ultrasonic sensing, electronics integration, and a custom
+        3D-printed chassis. This self-directed project involved independently
+        learning Arduino programming, embedded systems development, and
+        technical documentation.
+    </p>
 
-<a href="https://github.com/MiaMorrisonAerospace/CATIA-Scooter-Design" target="_blank">
-View Project
-</a>
+    <p>
+        <strong>
+            This project has been selected for a sponsorship with PCBWay and
+            is currently undergoing professional manufacturing.
+        </strong>
+    </p>
+
+    <a href="https://github.com/MiaMorrisonAerospace/Pathfinder-AODR01-Rover"
+       target="_blank">
+        View Project
+    </a>
+
+</div>
+
+
+<!-- MATLAB ACTIVE RECALL -->
+
+<div class="project">
+
+    <h3>MATLAB Active Recall Study System</h3>
+
+    <video controls>
+        <source src="images/MATLAB Active Recall Short.mp4"
+                type="video/mp4">
+    </video>
+
+    <p>
+        This MATLAB program helps engineering students prepare for exams using
+        active recall by presenting questions, evaluating responses, providing
+        explanations, and guiding students through course-specific review
+        sessions.
+    </p>
+
+    <a href="https://github.com/MiaMorrisonAerospace/MATLAB-Active-Recall-Study-System"
+       target="_blank">
+        View Project
+    </a>
+
+</div>
+
+
+<!-- MATLAB MEAL RECOMMENDATION -->
+
+<div class="project">
+
+    <h3>MATLAB Meal Recommendation System</h3>
+
+    <video controls>
+        <source src="images/Meal Prep Video.mp4"
+                type="video/mp4">
+    </video>
+
+    <p>
+        Developed a MATLAB application that generates high-protein,
+        low-calorie meal recommendations based on meal type, protein
+        preference, and available cooking time using an Excel-based recipe
+        database.
+    </p>
+
+    <a href="https://github.com/MiaMorrisonAerospace/MATLAB-Study-Abroad-Meal-Recommendation-System"
+       target="_blank">
+        View Project
+    </a>
+
+</div>
+
+
+<!-- CATIA SCOOTER -->
+
+<div class="project">
+
+    <h3>CATIA Scooter Design Project</h3>
+
+    <img src="images/Scooter Rendering.png"
+         alt="CATIA Scooter Rendering">
+
+    <p>
+        Reverse-engineered and modeled an electric scooter assembly using
+        CATIA while creating engineering drawings and technical documentation.
+        This project helped build the CAD skills that contributed to obtaining
+        my first engineering internship.
+    </p>
+
+    <a href="https://github.com/MiaMorrisonAerospace/CATIA-Scooter-Design"
+       target="_blank">
+        View Project
+    </a>
 
 </div>
 
 </div>
+
+</div>
+
+
+<!-- ABOUT ME -->
 
 <hr>
+
+<div class="section">
+
 <div class="about">
-    
+
 <h2>About Me</h2>
 
 <p>
-Hi, I'm Mia Morrison.
+    Hi, I'm Mia Morrison.
 </p>
 
 <p>
-I'm an Aerospace Engineering student at Embry-Riddle Aeronautical University who enjoys solving complex problems through systems thinking, leadership, and engineering design.
+    I'm an Aerospace Engineering student at Embry-Riddle Aeronautical
+    University who enjoys solving complex problems through systems thinking,
+    leadership, and engineering design.
 </p>
 
 <p>
-Long before studying engineering, I was already focused on solving challenges in my community. As a two-time Florida Youth of the Year, I developed a college readiness program that helped students navigate applications, scholarships, essays, and the transition to higher education. Through advocacy, public speaking, and community leadership, I learned how to identify problems, communicate solutions, and bring people together around a common goal.
+    Long before studying engineering, I was already focused on solving
+    challenges in my community. As a two-time Florida Youth of the Year,
+    I developed a college readiness program that helped students navigate
+    applications, scholarships, essays, and the transition to higher education.
+    Through advocacy, public speaking, and community leadership, I learned how
+    to identify problems, communicate solutions, and bring people together
+    around a common goal.
 </p>
-    
+
 <p>
-Today, I apply that same mindset to engineering. Whether designing autonomous rover systems, developing software tools, or creating mechanical designs, I enjoy understanding how individual components interact within a larger system and developing practical solutions that create real impact.
+    Today, I apply that same mindset to engineering. Whether designing
+    autonomous rover systems, developing software tools, or creating
+    mechanical designs, I enjoy understanding how individual components
+    interact within a larger system and developing practical solutions that
+    create real impact.
 </p>
-    
+
 <p>
-My goal is to help design and develop aerospace systems that push the boundaries of exploration, flight, and technology while leading teams that turn ambitious ideas into reality.
+    My goal is to build a career in Guidance, Navigation &amp; Control,
+    applying dynamics, controls, simulation, and systems engineering to the
+    development of launch vehicles and spacecraft.
 </p>
-    
+
 </div>
 
-<hr>
-
-    
 </div>
+
+
+<!-- LEADERSHIP AND IMPACT -->
+
 <hr>
 
 <div class="section">
 
-<h2 style="text-align:center;">Leadership & Impact</h2>
+<h2 style="text-align:center;">Leadership &amp; Impact</h2>
 
 <div style="display:flex; justify-content:center; gap:30px; flex-wrap:wrap;">
 
-<div style="width:280px; text-align:center;">
-
-<img src="images/State_Win2.PNG" style="width:280px; height:220px; object-fit:cover;">
-
-<p><b>2022 & 2023 Florida Youth of the Year</b></p>
-
-<p>
-Advocated nationally for youth mental health awareness and educational access through Boys & Girls Clubs of America.
-</p>
-
-<p>
-Created a college readiness program and personally mentored 5 students through college applications, essays, scholarships, and enrollment.
-</p>
-
-</div>
-
-<div style="width:280px; text-align:center;">
-<img src="images/Guatemala_Serve.PNG" style="width:280px; height:220px; object-fit:cover;">
-    
-<h4>Guatemala Service Project</h4>
-<p>
-Worked with Habitat for Humanity in Guatemala to build a stove for a local family.
-</p>
-    
-<p>
-Used intermediate Spanish to communicate with local masons and help coordinate construction efforts.
-</p>
-</div>
 
 <div style="width:280px; text-align:center;">
 
-<img src="images/Mae Jemison.PNG" style="width:280px; height:220px; object-fit:cover;">
-<h4>NASCAR & Mae Jemison</h4>
-<p>
-Served as a youth keynote speaker at a NASCAR business conference and earned a NASCAR business internship opportunity.
-</p>
+    <img src="images/State_Win2.PNG"
+         style="width:280px; height:220px; object-fit:cover;"
+         alt="Florida Youth of the Year">
 
-<p>
-Met Dr. Mae Jemison, one of my earliest STEM inspirations, and shared my experiences in leadership and community impact.
-</p>
+    <p><b>2022 &amp; 2023 Florida Youth of the Year</b></p>
+
+    <p>
+        Advocated nationally for youth mental health awareness and educational
+        access through Boys &amp; Girls Clubs of America.
+    </p>
+
+    <p>
+        Created a college readiness program and personally mentored 5 students
+        through college applications, essays, scholarships, and enrollment.
+    </p>
+
 </div>
+
 
 <div style="width:280px; text-align:center;">
-<img src="images/FIF.PNG" style="width:280px; height:220px; object-fit:cover;">
-<h4>Faith in Florida</h4>
-<p>
-Lead fundraising, donor stewardship, civic engagement, and statewide initiatives supporting communities across Florida.
-</p>
 
-<p>
-Help coordinate campaigns generating $100,000 annually while organizing candidate forums, educational workshops, and large-scale events.
-</p>
+    <img src="images/Guatemala_Serve.PNG"
+         style="width:280px; height:220px; object-fit:cover;"
+         alt="Guatemala Service Project">
+
+    <h4>Guatemala Service Project</h4>
+
+    <p>
+        Worked with Habitat for Humanity in Guatemala to build a stove for a
+        local family.
+    </p>
+
+    <p>
+        Used intermediate Spanish to communicate with local masons and help
+        coordinate construction efforts.
+    </p>
+
+</div>
+
+
+<div style="width:280px; text-align:center;">
+
+    <img src="images/Mae Jemison.PNG"
+         style="width:280px; height:220px; object-fit:cover;"
+         alt="NASCAR and Mae Jemison">
+
+    <h4>NASCAR &amp; Mae Jemison</h4>
+
+    <p>
+        Served as a youth keynote speaker at a NASCAR business conference and
+        earned a NASCAR business internship opportunity.
+    </p>
+
+    <p>
+        Met Dr. Mae Jemison, one of my earliest STEM inspirations, and shared
+        my experiences in leadership and community impact.
+    </p>
+
+</div>
+
+
+<div style="width:280px; text-align:center;">
+
+    <img src="images/FIF.PNG"
+         style="width:280px; height:220px; object-fit:cover;"
+         alt="Faith in Florida">
+
+    <h4>Faith in Florida</h4>
+
+    <p>
+        Lead fundraising, donor stewardship, civic engagement, and statewide
+        initiatives supporting communities across Florida.
+    </p>
+
+    <p>
+        Help coordinate campaigns generating $100,000 annually while
+        organizing candidate forums, educational workshops, and large-scale
+        events.
+    </p>
+
 </div>
 
 </div>
+
+</div>
+
+
+<!-- CONTACT -->
+
+<hr>
+
 <div class="section">
 
 <h2 style="text-align:center;">Contact</h2>
-<div style="text-align:center;">
-    
-<p>Email: Morrism3@my.erau.edu</p>
-<p>       Mikhalia946@gmail.com</p>
-    
-<p>
-GitHub:
-<a href="https://github.com/MiaMorrisonAerospace" target="_blank">
-MiaMorrisonAerospace
-</a>
-</p>
 
-<p>
-LinkedIn:
-<a href="https://www.linkedin.com/in/miamorrison88/" target="_blank">
-Mia Morrison
-</a>
-</p>
+<div style="text-align:center;">
+
+    <p>Email: Morrism3@my.erau.edu</p>
+    <p>Mikhalia946@gmail.com</p>
+
+    <p>
+        GitHub:
+        <a href="https://github.com/MiaMorrisonAerospace" target="_blank">
+            MiaMorrisonAerospace
+        </a>
+    </p>
+
+    <p>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/miamorrison88/" target="_blank">
+            Mia Morrison
+        </a>
+    </p>
+
+</div>
 
 </div>
 
